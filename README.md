@@ -35,7 +35,7 @@
 
 * A continuación se presenta el siguiente modelo a estimar:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\text{log}\Bigg(\frac{\text{Pr}(\texttt{chd} = 1)}{1 - \text{Pr}(\texttt{chd} = 1)}\Bigg) = \beta_{0} + \beta_{1}\cdot\texttt{famhist}" title="\Large \text{log}\Bigg(\frac{\text{Pr}(\texttt{chd} = 1)}{1 - \text{Pr}(\texttt{chd} = 1)}\Bigg) = \beta_{0} + \beta_{1}\cdot\texttt{famhist}" />
+![alttext](eq1.gif)
 
 * Para ello ejecute los siguientes pasos:
     1. Recodifique `famhist` a dummy, asignando 1 a la categoría minoritaria.
@@ -49,14 +49,13 @@
     - ¿Cuál es la diferencia en la probabilidad entre un individuo con antecedentes y otro sin antecedentes?
 
 * Replique el modelo con `smf.ols` y comente las similitudes entre los coeficientes estimados. 
-    - _tip_: Utilice
-<img src="https://latex.codecogs.com/svg.latex?\beta/4" title="\beta/4" />
+    - _tip_: Utilice <img src="https://latex.codecogs.com/svg.latex?\beta/4" title="\beta/4" />
 
 ## Ejercicio 3: Estimación completa
 
 * Implemente un modelo con la siguiente forma
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space; \text{log}\Bigg(\frac{\text{Pr}(\texttt{chd} = 1)}{1 - \text{Pr}(\texttt{chd} = 1)}\Bigg) = \beta_{0} + \sum_{j=1}^{N}\beta_{j}\cdot X" title="\Large \text{log}\Bigg(\frac{\text{Pr}(\texttt{chd} = 1)}{1 - \text{Pr}(\texttt{chd} = 1)}\Bigg) = \beta_{0} + \sum_{j=1}^{N}\beta_{j}\cdot X" />
+![alttext](eq2.gif)
 
 * Depure el modelo manteniendo las variables con significancia estadística al 95%.
 * Compare los estadísticos de bondad de ajuste entre ambos.
